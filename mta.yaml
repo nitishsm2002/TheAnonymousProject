@@ -1,0 +1,41 @@
+ID: the.anonymous.project.mta
+_schema-version: "3.1.0"
+version: 1.0.0
+
+modules:
+  - name: anonymous-ui
+    type: html5
+    path: app
+    requires:
+      - name: app-router
+
+  - name: app-router
+    type: approuter.nodejs
+    path: app-router
+    requires:
+      - name: anonymous-cap
+      - name: xsuaa
+
+  - name: anonymous-cap
+    type: nodejs
+    path: .
+    build-parameters:
+      builder: npm
+      command: npm run build
+    requires:
+      - name: hana
+      - name: xsuaa
+
+resources:
+  - name: hana
+    type: com.sap.xs.hdi-container
+    properties:
+      service: hana
+      service-plan: hdi-shared
+
+  - name: xsuaa
+    type: com.sap.xs.uaa
+    properties:
+      service: xsuaa
+      service-plan: application
+

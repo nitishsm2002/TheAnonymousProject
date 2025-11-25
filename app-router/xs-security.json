@@ -1,0 +1,15 @@
+{
+  "xsappname": "the-anonymous-project",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    { "name": "$XSAPPNAME.User", "description": "User scope" },
+    { "name": "$XSAPPNAME.HR", "description": "HR scope" },
+    { "name": "$XSAPPNAME.Admin", "description": "Admin scope" }
+  ],
+  "role-templates": [
+    { "name": "User", "description": "Default user", "scope-references": [ "$XSAPPNAME.User" ] },
+    { "name": "HR", "description": "HR role", "scope-references": [ "$XSAPPNAME.HR" ] },
+    { "name": "Admin", "description": "Administrator", "scope-references": [ "$XSAPPNAME.Admin" ] }
+  ]
+}
+
