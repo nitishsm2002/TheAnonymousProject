@@ -12,7 +12,7 @@ export default function Home() {
           href="/send"
           className="bg-black text-white px-5 py-2 text-sm hover:bg-gray-800 transition"
         >
-          SUBMIT
+          Send
         </Link>
       </div>
 
@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* Subtitle */}
       <p className="text-gray-700 text-lg font-light mb-10">
-        A Collection Of Anonymous Messages
+        A secure, anonymous platform where individuals can voice their thoughts freely, fostering openness and emotional expression.
       </p>
 
       {/* Center Buttons */}
