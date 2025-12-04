@@ -1,0 +1,155 @@
+2025-12-04T06:54:13  Fetching changes.
+2025-12-04T06:54:13    Starting  LocalZipHandler
+2025-12-04T06:54:13    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/dc233191-3dab-4284-bd0d-b64a69028a8d.zip (0.08 MB) to /tmp/zipdeploy/extracted
+2025-12-04T06:54:18  Updating submodules.
+2025-12-04T06:54:18  Preparing deployment for commit id 'c06204b2-7'.
+2025-12-04T06:54:18  PreDeployment: context.CleanOutputPath False
+2025-12-04T06:54:18  PreDeployment: context.OutputPath /home/site/wwwroot
+2025-12-04T06:54:18  Repository path is /tmp/zipdeploy/extracted
+2025-12-04T06:54:19  Running oryx build...
+2025-12-04T06:54:19    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 20 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8de3301f22da5c8 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log
+2025-12-04T06:54:21    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2025-12-04T06:54:21    You can report issues at https://github.com/Microsoft/Oryx/issues
+2025-12-04T06:54:21    
+2025-12-04T06:54:21    Oryx Version: 0.2.20251022.1+bef98bc7139feefaa74be16de9d835e2c85385d4, Commit: bef98bc7139feefaa74be16de9d835e2c85385d4, ReleaseTagName: 20251022.1
+2025-12-04T06:54:21    
+2025-12-04T06:54:21    Build Operation ID: 438e472c20c65b0c
+2025-12-04T06:54:21    Repository Commit : c06204b2-7016-4255-9d47-23146bdfe437
+2025-12-04T06:54:21    OS Type           : bookworm
+2025-12-04T06:54:21    Image Type        : githubactions
+2025-12-04T06:54:22    
+2025-12-04T06:54:22    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2025-12-04T06:54:22    Backup SDK Storage URL: 
+2025-12-04T06:54:22    Detecting platforms...
+2025-12-04T06:54:22    External SDK provider is enabled.
+2025-12-04T06:54:22    Requesting metadata for platform nodejs from external SDK provider
+2025-12-04T06:54:26    Requesting metadata for platform nodejs from external SDK provider
+2025-12-04T06:54:27    Successfully requested blob for platform nodejs, blobName defaultVersion.bookworm.txt, available at /var/OryxSdks/nodejs/defaultVersion.bookworm.txt
+2025-12-04T06:54:27    Detected following platforms:
+2025-12-04T06:54:27      nodejs: 20.19.5
+2025-12-04T06:54:27    Requesting metadata for platform nodejs from external SDK provider
+2025-12-04T06:54:31    Successfully requested blob for platform nodejs, blobName nodejs-bookworm-20.19.5.tar.gz, available at /var/OryxSdks/nodejs/nodejs-bookworm-20.19.5.tar.gz
+2025-12-04T06:54:31    Version '20.19.5' of platform 'nodejs' is not installed. Generating script to install it...
+2025-12-04T06:54:32    Detected the following frameworks: Express
+2025-12-04T06:54:32    
+2025-12-04T06:54:32    Using intermediate directory '/tmp/8de3301f22da5c8'.
+2025-12-04T06:54:32    
+2025-12-04T06:54:32    Copying files to the intermediate directory...
+2025-12-04T06:54:32    Done in 0 sec(s).
+2025-12-04T06:54:32    
+2025-12-04T06:54:33    Source directory     : /tmp/8de3301f22da5c8
+2025-12-04T06:54:33    Destination directory: /home/site/wwwroot
+2025-12-04T06:54:33    
+2025-12-04T06:54:33    
+2025-12-04T06:54:33    Downloading and extracting 'nodejs' version '20.19.5' to '/tmp/oryx/platforms/nodejs/20.19.5'...
+2025-12-04T06:54:33    Detected image debian flavor: bookworm.
+2025-12-04T06:54:33    Skipping download of nodejs version 20.19.5 as it is available in external sdk provider cache...
+2025-12-04T06:54:33    Extracting contents...
+2025-12-04T06:54:42    Successfully extracted nodejs version 20.19.5 from external sdk provider cache...
+2025-12-04T06:54:42    Done in 10 sec(s).
+2025-12-04T06:54:42    
+2025-12-04T06:54:42    Removing existing manifest file
+2025-12-04T06:54:42    Creating directory for command manifest file if it does not exist
+2025-12-04T06:54:42    Creating a manifest file...
+2025-12-04T06:54:42    Node Build Command Manifest file created.
+2025-12-04T06:54:42    
+2025-12-04T06:54:42    Using Node version:
+2025-12-04T06:54:43    v20.19.5
+2025-12-04T06:54:43    
+2025-12-04T06:54:43    Using Npm version:
+2025-12-04T06:54:43    10.8.2
+2025-12-04T06:54:43    
+2025-12-04T06:54:43    Running 'npm install'...
+2025-12-04T06:54:44    
+2025-12-04T06:55:39    
+2025-12-04T06:55:39    > the-anonymous-project@1.0.0 postinstall
+2025-12-04T06:55:39    > npm run build && npx cds deploy --to sqlite:sqlite.db
+2025-12-04T06:55:39    
+2025-12-04T06:55:40    
+2025-12-04T06:55:41    > the-anonymous-project@1.0.0 build
+2025-12-04T06:55:41    > cds build --production
+2025-12-04T06:55:41    
+2025-12-04T06:55:41    building project with {
+2025-12-04T06:55:41      versions: { cds: '9.5.1', compiler: '6.5.2', dk: '9.5.0' },
+2025-12-04T06:55:41      target: 'gen',
+2025-12-04T06:55:41      tasks: [
+2025-12-04T06:55:41        { src: 'srv', for: 'nodejs', options: { model: [ 'db', 'srv', '@sap/cds/srv/outbox' ] } }
+2025-12-04T06:55:41      ]
+2025-12-04T06:55:42    }
+2025-12-04T06:55:49    done > wrote output to:
+2025-12-04T06:55:50       gen/srv/_i18n/i18n.json
+2025-12-04T06:55:50       gen/srv/package-lock.json
+2025-12-04T06:55:50       gen/srv/package.json
+2025-12-04T06:55:50       gen/srv/server.js
+2025-12-04T06:55:50       gen/srv/srv/csn.json
+2025-12-04T06:55:50       gen/srv/srv/handlers/FeedbackService.js
+2025-12-04T06:55:50       gen/srv/srv/index.js
+2025-12-04T06:55:50       gen/srv/srv/odata/v4/AnonymousService.xml
+2025-12-04T06:55:50    
+2025-12-04T06:55:50    build completed in 8344 ms
+2025-12-04T06:55:53    /> successfully deployed to sqlite.db 
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    added 287 packages, and audited 288 packages in 1m
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    31 packages are looking for funding
+2025-12-04T06:55:54      run `npm fund` for details
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    found 0 vulnerabilities
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    Running 'npm run build'...
+2025-12-04T06:55:54    
+2025-12-04T06:55:54    npm notice
+2025-12-04T06:55:54    npm notice New major version of npm available! 10.8.2 -> 11.6.4
+2025-12-04T06:55:54    npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.4
+2025-12-04T06:55:54    npm notice To update run: npm install -g npm@11.6.4
+2025-12-04T06:55:54    npm notice
+2025-12-04T06:55:55    
+2025-12-04T06:55:55    > the-anonymous-project@1.0.0 build
+2025-12-04T06:55:55    > cds build --production
+2025-12-04T06:55:55    
+2025-12-04T06:55:55    building project with {
+2025-12-04T06:55:55      versions: { cds: '9.5.1', compiler: '6.5.2', dk: '9.5.0' },
+2025-12-04T06:55:55      target: 'gen',
+2025-12-04T06:55:55      tasks: [
+2025-12-04T06:55:56        { src: 'srv', for: 'nodejs', options: { model: [ 'db', 'srv', '@sap/cds/srv/outbox' ] } }
+2025-12-04T06:55:56      ]
+2025-12-04T06:55:56    }
+2025-12-04T06:56:05    done > wrote output to:
+2025-12-04T06:56:06       gen/srv/_i18n/i18n.json
+2025-12-04T06:56:06       gen/srv/package-lock.json
+2025-12-04T06:56:06       gen/srv/package.json
+2025-12-04T06:56:06       gen/srv/server.js
+2025-12-04T06:56:06       gen/srv/srv/csn.json
+2025-12-04T06:56:06       gen/srv/srv/handlers/FeedbackService.js
+2025-12-04T06:56:06       gen/srv/srv/index.js
+2025-12-04T06:56:06       gen/srv/srv/odata/v4/AnonymousService.xml
+2025-12-04T06:56:06    
+2025-12-04T06:56:06    build completed in 10243 ms
+2025-12-04T06:56:06    
+2025-12-04T06:56:06    Zipping existing node_modules folder...
+2025-12-04T06:56:21    Done in 15 sec(s).
+2025-12-04T06:56:21    Preparing output...
+2025-12-04T06:56:21    
+2025-12-04T06:56:21    Copying files to destination directory '/home/site/wwwroot'...
+2025-12-04T06:56:21    Done in 0 sec(s).
+2025-12-04T06:56:21    
+2025-12-04T06:56:21    Removing existing manifest file
+2025-12-04T06:56:21    Creating a manifest file...
+2025-12-04T06:56:21    Manifest file created.
+2025-12-04T06:56:21    Copying .ostype to manifest output directory.
+2025-12-04T06:56:21    
+2025-12-04T06:56:21    Done in 109 sec(s).
+2025-12-04T06:56:22  Running post deployment command(s)...
+2025-12-04T06:56:23  
+2025-12-04T06:56:23  Generating summary of Oryx build
+2025-12-04T06:56:23  Parsing the build logs
+2025-12-04T06:56:23  Found 0 issue(s)
+2025-12-04T06:56:23  
+2025-12-04T06:56:23  Build Summary :
+2025-12-04T06:56:23  ===============
+2025-12-04T06:56:24  Errors (0)
+2025-12-04T06:56:24  Warnings (0)
+2025-12-04T06:56:24  
+2025-12-04T06:56:24  Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path
+2025-12-04T06:56:24  Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy

@@ -1,4 +1,4 @@
-using company.anonymousproject as ap from '../db/schema';
+using company.anonymousproject as ap;
 
 @path: '/odata/v4/AnonymousService'
 service AnonymousService {

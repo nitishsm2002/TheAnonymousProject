@@ -4,7 +4,7 @@ namespace company.anonymousproject;
 
 entity Feedback : managed {
   key ID       : UUID;
-  toName       : String(200);      // store recipient name
+  toName       : String(200);
   message      : String(2000);
   category     : String(50);
   isAnonymous  : Boolean default true;
