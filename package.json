@@ -3,17 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cds build --production",
-    "postinstall": "npm run build && npx cds deploy --to sqlite:sqlite.db",
     "start": "node server.js"
   },
   "dependencies": {
-    "@cap-js/sqlite": "^2.1.0",
     "@sap/cds": "^9.5.1",
+    "@cap-js/sqlite": "^2.1.0",
     "express": "^4"
-  },
-  "engines": {
-    "node": ">=18 <21"
   },
   "cds": {
     "requires": {
@@ -24,8 +19,5 @@
         }
       }
     }
-  },
-  "devDependencies": {
-    "@sap/cds-dk": "^9.4.3"
   }
 }
